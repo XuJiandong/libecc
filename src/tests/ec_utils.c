@@ -1245,8 +1245,8 @@ ATTRIBUTE_WARN_UNUSED_RET static int verify_bin_file(const char *ec_name, const 
 	}
 
 	/* Check if we support streaming */
-	ret = is_verify_streaming_mode_supported(sig_type, &check); EG(ret, err);
-	if(check){
+	// ret = is_verify_streaming_mode_supported(sig_type, &check); EG(ret, err);
+	if((0)) {
 		/**** We support streaming mode ****/
 		/*
 		 * ... and read file content chunk by chunk to compute signature
