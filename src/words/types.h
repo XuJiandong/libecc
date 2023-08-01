@@ -40,6 +40,8 @@
  */
 #include <stdint.h>
 #include <stddef.h>
+#define UINT64_C(c) (c ## ULL)
+
 #else /* WITH_STDLIB */
 
 /*
